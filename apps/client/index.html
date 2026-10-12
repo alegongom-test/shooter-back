@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#111410" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Horda</title>
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <div id="rotate">
+      <div class="rotate-icon">⟳</div>
+      <p>Gira el móvil para jugar en horizontal</p>
+    </div>
+
+    <div id="overlay">
+      <!-- Inicio de sesión -->
+      <section id="auth" class="panel">
+        <h1>HORDA</h1>
+        <p class="sub">Cooperativo de zombis · PoC</p>
+        <label>Servidor<input id="server" placeholder="192.168.1.X:2567" autocomplete="off" autocapitalize="off" spellcheck="false" /></label>
+        <button id="btn-resume" class="primary hidden"></button>
+        <form id="auth-form" class="stack" autocomplete="on">
+          <label>Usuario<input id="user" name="username" maxlength="16" autocomplete="username" autocapitalize="off" spellcheck="false" /></label>
+          <label>Contraseña<input id="pass" name="password" type="password" maxlength="64" autocomplete="current-password" /></label>
+          <div class="row">
+            <button id="btn-login" type="submit" class="primary">Entrar</button>
+            <button id="btn-register" type="button">Crear cuenta</button>
+          </div>
+        </form>
+        <details>
+          <summary>Opciones de prueba</summary>
+          <label>Lag simulado (ms ida y vuelta)<input id="lag" type="number" min="0" max="1000" step="10" value="0" /></label>
+          <label>Jitter (ms)<input id="jitter" type="number" min="0" max="300" step="5" value="0" /></label>
+        </details>
+        <p id="auth-status" class="status"></p>
+      </section>
+
+      <!-- Inicio: perfil y salas -->
+      <section id="home" class="panel hidden">
+        <div class="profile">
+          <div class="profile-top">
+            <strong id="p-name"></strong>
+            <span id="p-cash" class="cash"></span>
+          </div>
+          <div class="profile-level"><span id="p-level"></span><span id="p-xp" class="muted"></span></div>
+          <div class="bar"><div id="p-xpbar"></div></div>
+          <p id="p-stats" class="muted small"></p>
+        </div>
+        <h3>Clase</h3>
+        <div id="home-classes" class="classes"></div>
+        <button id="btn-create" class="primary">Crear sala</button>
+        <div class="row">
+          <input id="code" maxlength="4" placeholder="CÓDIGO" autocomplete="off" autocapitalize="characters" spellcheck="false" />
+          <button id="btn-join">Unirse</button>
+        </div>
+        <div class="row">
+          <button id="btn-arsenal">Arsenal</button>
+          <button id="btn-skills">Habilidades</button>
+        </div>
+        <p id="home-status" class="status"></p>
+        <button id="btn-logout" class="link">Cerrar sesión</button>
+      </section>
+
+      <!-- Arsenal -->
+      <section id="arsenal" class="panel wide hidden">
+        <div class="profile-top">
+          <button id="btn-arsenal-back" class="link">‹ Volver</button>
+          <span id="a-cash" class="cash"></span>
+        </div>
+        <h3>Equipo</h3>
+        <div id="a-loadout" class="loadout"></div>
+        <h3>Inventario</h3>
+        <div id="a-items" class="items"></div>
+        <p id="a-status" class="status"></p>
+      </section>
+
+      <!-- Árbol de habilidades -->
+      <section id="skills" class="panel wide hidden">
+        <div class="profile-top">
+          <button id="btn-skills-back" class="link">‹ Volver</button>
+          <span id="s-points" class="cash"></span>
+        </div>
+        <div id="s-classes" class="classes"></div>
+        <div id="s-tree" class="tree"></div>
+        <h3>Resumen de combate</h3>
+        <div id="s-summary" class="muted small summary"></div>
+        <button id="btn-skills-reset" class="link">Reiniciar habilidades de esta clase</button>
+        <p id="s-status" class="status"></p>
+      </section>
+
+      <!-- Sala de espera -->
+      <section id="lobby" class="panel hidden">
+        <p class="sub">Código de sala</p>
+        <div id="lobby-code" class="code"></div>
+        <ul id="lobby-players"></ul>
+        <div id="lobby-classes" class="classes"></div>
+        <button id="btn-start" class="primary">Empezar partida</button>
+        <p id="lobby-wait" class="status">Esperando a que el anfitrión empiece…</p>
+        <button id="btn-leave" class="link">Salir</button>
+      </section>
+
+      <!-- Resultados -->
+      <section id="results" class="panel hidden">
+        <h2 id="results-title"></h2>
+        <p id="results-sub" class="sub"></p>
+        <table id="results-table"></table>
+        <div id="rewards" class="rewards"><p class="muted small">Calculando recompensas…</p></div>
+        <button id="btn-back" class="primary">Volver a la sala</button>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

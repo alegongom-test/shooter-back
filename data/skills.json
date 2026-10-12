@@ -1,0 +1,29 @@
+{
+  "tierRequirements": [0, 5, 10],
+  "trees": {
+    "assault": [
+      { "id": "quick_trigger", "name": "Gatillo rápido", "tier": 1, "maxRank": 5, "stat": "fireRate", "perRank": 0.04, "description": "+4 % cadencia por rango" },
+      { "id": "big_mags", "name": "Cargadores ampliados", "tier": 1, "maxRank": 5, "stat": "mag", "perRank": 0.08, "description": "+8 % tamaño de cargador por rango" },
+      { "id": "marksman", "name": "Puntería", "tier": 2, "maxRank": 5, "stat": "damage", "perRank": 0.04, "description": "+4 % daño de armas por rango" },
+      { "id": "tactical_reload", "name": "Recarga táctica", "tier": 2, "maxRank": 5, "stat": "reload", "perRank": 0.08, "description": "+8 % velocidad de recarga por rango" },
+      { "id": "rush", "name": "Subidón", "tier": 3, "maxRank": 3, "stat": "abilityPower", "perRank": 0.15, "description": "+15 % potencia de Adrenalina por rango" },
+      { "id": "demolition", "name": "Demolición", "tier": 3, "maxRank": 2, "stat": "grenades", "perRank": 1, "description": "+1 granada por rango" }
+    ],
+    "medic": [
+      { "id": "first_aid", "name": "Primeros auxilios", "tier": 1, "maxRank": 5, "stat": "reviveSpeed", "perRank": 0.15, "description": "+15 % velocidad al revivir por rango" },
+      { "id": "constitution", "name": "Constitución", "tier": 1, "maxRank": 5, "stat": "hp", "perRank": 5, "description": "+5 de vida máxima por rango" },
+      { "id": "pharmacology", "name": "Farmacología", "tier": 2, "maxRank": 5, "stat": "abilityCooldown", "perRank": 0.06, "description": "-6 % recarga de habilidad por rango" },
+      { "id": "strong_pulse", "name": "Pulso fuerte", "tier": 2, "maxRank": 5, "stat": "abilityPower", "perRank": 0.1, "description": "+10 % curación por rango" },
+      { "id": "antidote", "name": "Antídoto", "tier": 3, "maxRank": 5, "stat": "armor", "perRank": 0.03, "description": "+3 % a todas las resistencias por rango" },
+      { "id": "clinical", "name": "Precisión clínica", "tier": 3, "maxRank": 5, "stat": "damage", "perRank": 0.03, "description": "+3 % daño de armas por rango" }
+    ],
+    "heavy": [
+      { "id": "plating", "name": "Blindaje", "tier": 1, "maxRank": 5, "stat": "armor", "perRank": 0.03, "description": "+3 % a todas las resistencias por rango" },
+      { "id": "bulk", "name": "Corpulencia", "tier": 1, "maxRank": 5, "stat": "hp", "perRank": 8, "description": "+8 de vida máxima por rango" },
+      { "id": "grenadier", "name": "Granadero", "tier": 2, "maxRank": 5, "stat": "grenadeDamage", "perRank": 0.1, "description": "+10 % daño de granadas por rango" },
+      { "id": "heavy_ammo", "name": "Munición pesada", "tier": 2, "maxRank": 5, "stat": "damage", "perRank": 0.04, "description": "+4 % daño de armas por rango" },
+      { "id": "bastion", "name": "Bastión", "tier": 3, "maxRank": 4, "stat": "abilityPower", "perRank": 0.05, "description": "+5 puntos de reducción del Escudo por rango" },
+      { "id": "more_grenades", "name": "Cinturón de granadas", "tier": 3, "maxRank": 2, "stat": "grenades", "perRank": 1, "description": "+1 granada por rango" }
+    ]
+  }
+}

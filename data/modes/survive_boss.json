@@ -1,0 +1,77 @@
+{
+  "id": "survive_boss",
+  "name": "Sobrevive y mata al jefe",
+  "map": "arena",
+  "surviveSeconds": 300,
+  "maxAlive": 180,
+  "respawnSeconds": 10,
+  "playerScaling": {
+    "spawnPerExtraPlayer": 0.35
+  },
+  "spawnCurve": [
+    {
+      "t": 0,
+      "perSecond": 1.2
+    },
+    {
+      "t": 60,
+      "perSecond": 2.5
+    },
+    {
+      "t": 180,
+      "perSecond": 5
+    },
+    {
+      "t": 270,
+      "perSecond": 8
+    }
+  ],
+  "mix": [
+    {
+      "t": 0,
+      "weights": {
+        "walker": 1
+      }
+    },
+    {
+      "t": 45,
+      "weights": {
+        "walker": 0.7,
+        "runner": 0.3
+      }
+    },
+    {
+      "t": 90,
+      "weights": {
+        "walker": 0.6,
+        "runner": 0.25,
+        "spitter": 0.15
+      }
+    },
+    {
+      "t": 150,
+      "weights": {
+        "walker": 0.45,
+        "runner": 0.25,
+        "brute": 0.12,
+        "spitter": 0.1,
+        "exploder": 0.08
+      }
+    },
+    {
+      "t": 240,
+      "weights": {
+        "walker": 0.38,
+        "runner": 0.3,
+        "brute": 0.14,
+        "spitter": 0.1,
+        "exploder": 0.08
+      }
+    }
+  ],
+  "boss": {
+    "enemy": "butcher",
+    "hpPerExtraPlayer": 0.5,
+    "escortPerSecond": 0
+  }
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "walker",
+    "name": "Caminante",
+    "sprite": "zombie",
+    "tint": "#7da34a",
+    "hp": 60,
+    "speed": 70,
+    "radius": 14,
+    "damage": 10,
+    "attackCooldown": 1,
+    "xp": 2,
+    "cash": 1,
+    "drop": {
+      "chance": 0.03,
+      "boxes": {
+        "bronze": 85,
+        "silver": 14,
+        "gold": 1
+      }
+    },
+    "damageType": "physical"
+  },
+  {
+    "id": "runner",
+    "name": "Corredor",
+    "sprite": "zombie",
+    "tint": "#d8c34f",
+    "hp": 35,
+    "speed": 140,
+    "radius": 12,
+    "damage": 6,
+    "attackCooldown": 0.7,
+    "xp": 2,
+    "cash": 1,
+    "drop": {
+      "chance": 0.03,
+      "boxes": {
+        "bronze": 85,
+        "silver": 14,
+        "gold": 1
+      }
+    },
+    "damageType": "physical"
+  },
+  {
+    "id": "brute",
+    "name": "Bruto",
+    "sprite": "zombie",
+    "tint": "#a04a4a",
+    "hp": 280,
+    "speed": 52,
+    "radius": 22,
+    "damage": 25,
+    "attackCooldown": 1.4,
+    "xp": 8,
+    "cash": 5,
+    "drop": {
+      "chance": 0.15,
+      "boxes": {
+        "bronze": 50,
+        "silver": 40,
+        "gold": 10
+      }
+    },
+    "damageType": "physical"
+  },
+  {
+    "id": "spitter",
+    "name": "Escupidor",
+    "sprite": "zombie",
+    "tint": "#4fc36f",
+    "hp": 50,
+    "speed": 75,
+    "radius": 13,
+    "damage": 6,
+    "attackCooldown": 1,
+    "damageType": "toxic",
+    "xp": 4,
+    "cash": 2,
+    "drop": {
+      "chance": 0.05,
+      "boxes": {
+        "bronze": 70,
+        "silver": 26,
+        "gold": 4
+      }
+    },
+    "ranged": {
+      "range": 320,
+      "keepDistance": 210,
+      "cooldown": 2.6,
+      "projectileSpeed": 260,
+      "damage": 14,
+      "projectileRadius": 8
+    }
+  },
+  {
+    "id": "exploder",
+    "name": "Hinchado",
+    "sprite": "zombie",
+    "tint": "#e07b39",
+    "hp": 90,
+    "speed": 58,
+    "radius": 18,
+    "damage": 0,
+    "attackCooldown": 1,
+    "damageType": "fire",
+    "xp": 4,
+    "cash": 3,
+    "drop": {
+      "chance": 0.05,
+      "boxes": {
+        "bronze": 70,
+        "silver": 26,
+        "gold": 4
+      }
+    },
+    "explode": {
+      "radius": 95,
+      "damage": 32,
+      "trigger": 46
+    }
+  },
+  {
+    "id": "butcher",
+    "name": "El Carnicero",
+    "sprite": "boss",
+    "tint": "#8e44ad",
+    "hp": 6000,
+    "speed": 62,
+    "radius": 40,
+    "damage": 35,
+    "attackCooldown": 1.2,
+    "xp": 200,
+    "cash": 150,
+    "drop": {
+      "chance": 1,
+      "boxes": {
+        "gold": 60,
+        "titanium": 40
+      }
+    },
+    "boss": true,
+    "charge": {
+      "cooldown": 6,
+      "windup": 0.9,
+      "speed": 430,
+      "duration": 1.1,
+      "damage": 40
+    },
+    "damageType": "physical"
+  }
+]

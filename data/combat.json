@@ -1,0 +1,17 @@
+{
+  "resistCap": 0.75,
+  "grenade": {
+    "damage": 160,
+    "radius": 110,
+    "fuse": 1.1,
+    "range": 330,
+    "speed": 520,
+    "regenSeconds": 40
+  },
+  "revive": {
+    "bleedOutSeconds": 20,
+    "reviveSeconds": 3,
+    "radius": 60,
+    "hpFraction": 0.3
+  }
+}

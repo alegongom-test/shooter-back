@@ -1,0 +1,28 @@
+{
+  "name": "@horda/client",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "cap:sync": "vite build && cap sync android",
+    "android": "vite build && cap sync android && cap run android",
+    "android:open": "cap open android",
+    "apk": "vite build && cap sync android && node scripts/gradle.mjs assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor-community/keep-awake": "^8.0.1",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/screen-orientation": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
+    "@horda/shared": "*",
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "vite": "^8.3.4"
+  }
+}

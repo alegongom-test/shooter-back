@@ -1,0 +1,111 @@
+{
+  "rarities": [
+    {
+      "id": "common",
+      "name": "Común",
+      "color": "#b8b8b8",
+      "damageMul": 1,
+      "value": 20
+    },
+    {
+      "id": "uncommon",
+      "name": "Poco común",
+      "color": "#66bb6a",
+      "damageMul": 1.1,
+      "value": 50
+    },
+    {
+      "id": "rare",
+      "name": "Raro",
+      "color": "#42a5f5",
+      "damageMul": 1.22,
+      "value": 120
+    },
+    {
+      "id": "epic",
+      "name": "Épico",
+      "color": "#ba68c8",
+      "damageMul": 1.36,
+      "value": 300
+    },
+    {
+      "id": "legendary",
+      "name": "Legendario",
+      "color": "#ef5350",
+      "damageMul": 1.55,
+      "value": 800
+    }
+  ],
+  "boxes": [
+    {
+      "id": "bronze",
+      "name": "Bronce",
+      "color": "#cd7f32",
+      "rarities": {
+        "common": 70,
+        "uncommon": 25,
+        "rare": 5
+      }
+    },
+    {
+      "id": "silver",
+      "name": "Plata",
+      "color": "#d0d0d0",
+      "rarities": {
+        "common": 35,
+        "uncommon": 45,
+        "rare": 17,
+        "epic": 3
+      }
+    },
+    {
+      "id": "gold",
+      "name": "Oro",
+      "color": "#ffd54f",
+      "rarities": {
+        "uncommon": 40,
+        "rare": 42,
+        "epic": 15,
+        "legendary": 3
+      }
+    },
+    {
+      "id": "titanium",
+      "name": "Titanio",
+      "color": "#80deea",
+      "rarities": {
+        "rare": 45,
+        "epic": 40,
+        "legendary": 15
+      }
+    }
+  ],
+  "box": {
+    "lifetimeSeconds": 40,
+    "pickupRadius": 28,
+    "armorChance": 0.25
+  },
+  "upgrade": {
+    "maxLevel": 10,
+    "damagePerLevel": 0.07,
+    "baseCost": 40,
+    "costGrowth": 1.55,
+    "rarityCostStep": 0.5
+  },
+  "rollRange": [
+    0.95,
+    1.05
+  ],
+  "rewards": {
+    "xpPerSecond": 0.5,
+    "victoryXp": 250,
+    "defeatXp": 60,
+    "victoryCash": 150
+  },
+  "levels": {
+    "base": 100,
+    "exponent": 1.5,
+    "max": 50,
+    "hpPerLevel": 2
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "vest",
+    "name": "Chaleco ligero",
+    "minLevel": 1,
+    "resist": { "physical": 0.1, "fire": 0.1, "toxic": 0.1 },
+    "speed": 0
+  },
+  {
+    "id": "kevlar",
+    "name": "Kevlar",
+    "minLevel": 2,
+    "resist": { "physical": 0.25, "fire": 0.05, "toxic": 0.05 },
+    "speed": 0
+  },
+  {
+    "id": "hazmat",
+    "name": "Traje NBQ",
+    "minLevel": 3,
+    "resist": { "physical": 0.05, "fire": 0.1, "toxic": 0.35 },
+    "speed": 0
+  },
+  {
+    "id": "firesuit",
+    "name": "Traje ignífugo",
+    "minLevel": 4,
+    "resist": { "physical": 0.05, "fire": 0.35, "toxic": 0.1 },
+    "speed": 0
+  },
+  {
+    "id": "plate",
+    "name": "Coraza pesada",
+    "minLevel": 6,
+    "resist": { "physical": 0.35, "fire": 0.15, "toxic": 0.15 },
+    "speed": -0.08
+  }
+]

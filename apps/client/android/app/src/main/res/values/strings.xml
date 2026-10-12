@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Horda</string>
+    <string name="title_activity_main">Horda</string>
+    <string name="package_name">com.alex.horda</string>
+    <string name="custom_url_scheme">com.alex.horda</string>
+</resources>

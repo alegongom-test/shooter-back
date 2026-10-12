@@ -1,0 +1,63 @@
+[
+  {
+    "id": "assault",
+    "name": "Asalto",
+    "description": "Daño sostenido. Su Adrenalina dispara más rápido y corre más.",
+    "sprite": "player",
+    "hp": 100,
+    "speed": 195,
+    "radius": 14,
+    "grenades": 2,
+    "reviveSpeed": 1,
+    "ability": {
+      "id": "adrenaline",
+      "name": "Adrenalina",
+      "description": "+30 % cadencia y +20 % velocidad durante 6 s",
+      "cooldown": 30,
+      "duration": 6,
+      "power": 0.3
+    },
+    "loadout": ["pistol", "smg", "shotgun", "vest"]
+  },
+  {
+    "id": "medic",
+    "name": "Médico",
+    "description": "Mantiene vivo al equipo. Cura en área y revive el doble de rápido.",
+    "sprite": "player",
+    "hp": 100,
+    "speed": 190,
+    "radius": 14,
+    "grenades": 1,
+    "reviveSpeed": 2,
+    "ability": {
+      "id": "heal",
+      "name": "Pulso curativo",
+      "description": "Cura 40 de vida a ti y a los aliados cercanos",
+      "cooldown": 25,
+      "duration": 0,
+      "power": 40,
+      "radius": 230
+    },
+    "loadout": ["pistol", "smg", "shotgun", "vest"]
+  },
+  {
+    "id": "heavy",
+    "name": "Pesado",
+    "description": "Aguanta en primera línea. Más vida, más granadas y un Escudo.",
+    "sprite": "player",
+    "hp": 130,
+    "speed": 175,
+    "radius": 14,
+    "grenades": 3,
+    "reviveSpeed": 1,
+    "ability": {
+      "id": "shield",
+      "name": "Escudo",
+      "description": "Reduce un 60 % el daño recibido durante 6 s",
+      "cooldown": 30,
+      "duration": 6,
+      "power": 0.6
+    },
+    "loadout": ["pistol", "smg", "shotgun", "vest"]
+  }
+]

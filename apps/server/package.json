@@ -1,0 +1,22 @@
+{
+  "name": "@horda/server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --no-warnings=ExperimentalWarning src/main.ts",
+    "start": "tsx --no-warnings=ExperimentalWarning src/main.ts",
+    "bots": "tsx src/bots.ts",
+    "dev:boss": "cross-env HORDA_SURVIVE_SECONDS=30 tsx watch --no-warnings=ExperimentalWarning src/main.ts"
+  },
+  "dependencies": {
+    "@horda/shared": "*",
+    "tsx": "^4.23.15",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/ws": "^8.18.2",
+    "cross-env": "^10.1.0"
+  }
+}

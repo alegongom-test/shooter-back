@@ -1,0 +1,25 @@
+{
+  "name": "horda",
+  "private": true,
+  "version": "0.0.1",
+  "description": "PoC de shooter cooperativo de zombis (inspirado en SAS 4)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c green,cyan \"npm run dev -w @horda/server\" \"npm run dev -w @horda/client\"",
+    "server": "npm run start -w @horda/server",
+    "client": "npm run dev -w @horda/client",
+    "bots": "npm run bots -w @horda/server --",
+    "build": "npm run build -w @horda/client",
+    "typecheck": "tsc -p packages/shared && tsc -p apps/server && tsc -p apps/client",
+    "android": "npm run android -w @horda/client",
+    "apk": "npm run apk -w @horda/client",
+    "dev:boss": "concurrently -n server,client -c green,cyan \"npm run dev:boss -w @horda/server\" \"npm run dev -w @horda/client\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "typescript": "^7.0.2"
+  }
+}
